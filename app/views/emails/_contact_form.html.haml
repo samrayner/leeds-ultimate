@@ -1,0 +1,14 @@
+= bootstrap_form_for @contact_email do |f|
+  .row
+    .col-sm-6
+      = f.text_field :name, input_html: { autofocus: true }
+    .col-sm-6
+      = f.email_field :email
+  .row
+    .col-sm-12
+      = f.text_area :message, rows: 10
+
+  .hide
+    = f.text_field :first_name, hint: "Leave this blank!"
+
+  = f.submit "Send"
