@@ -15,11 +15,11 @@ describe EmailsController do
       expect(response).to be_success
     end
 
-    it "assigns a new subscription email" do
+    it "assigns a new contact email" do
       expect(assigns(:contact_email)).to be_a_new(Email)
     end
 
-    it "assigns a new contact email" do
+    it "assigns a new subscription email" do
       expect(assigns(:subscription_email)).to be_a_new(Email)
     end
 
